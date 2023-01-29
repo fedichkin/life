@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.field {
+    border: 3px solid #a37a74;
+    width: 320px;
+    height: 320px;
+    display: grid;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.field-cell {
+    border: 1px solid #e5e8f0;
+}
+
+.field-cell.active {
+    background-color: #a8d0db;
+}
+
+.button {
+    margin: 5px;
+    width: 90px;
+    font-size: 24px;
+}
